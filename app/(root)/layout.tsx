@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Threads",
-  description: "A Next.js 13 Meta Threads application",
+  description: "Threads application",
 };
 
 export default function RootLayout({
@@ -30,7 +30,6 @@ export default function RootLayout({
       <html lang='en'>
         <body className={inter.className}>
           <Topbar />
-
           <main className='flex flex-row'>
             <LeftSidebar />
             <section className='main-container'>

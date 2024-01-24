@@ -14,11 +14,6 @@ interface Props {
     image: string;
     id: string;
   };
-  community: {
-    id: string;
-    name: string;
-    image: string;
-  } | null;
   createdAt: string;
   comments: {
     author: {
@@ -34,7 +29,6 @@ function ThreadCard({
   parentId,
   content,
   author,
-  community,
   createdAt,
   comments,
   isComment,

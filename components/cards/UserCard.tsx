@@ -16,8 +16,6 @@ interface Props {
 function UserCard({ id, name, username, imgUrl, personType }: Props) {
   const router = useRouter();
 
-  const isCommunity = personType === "Community";
-
   return (
     <article className='user-card'>
       <div className='user-card_avatar'>
