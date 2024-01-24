@@ -13,10 +13,7 @@ export async function fetchUser(userId: string) {
   try {
     connectToDB();
 
-    return await User.findOne({ id: userId }).populate({
-      path: "communities",
-      model: Community,
-    });
+    return await User.findOne({ id: userId })
   } catch (error: any) {
     throw new Error(`Failed to fetch user: ${error.message}`);
   }
@@ -163,4 +160,7 @@ export async function getActivity(userId: string) {
 }
 
 
-// 4:49fs
+
+
+// https://www.youtube.com/watch?v=k4lHXIzCEkM
+//Mern stack tutorial
